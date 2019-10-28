@@ -1,8 +1,7 @@
 @import "../theme/index.scss";
 
-button:focus{
-  outline:0;
-}
+
+
 .react-ui__btn{
   &--primary{
     //background: $primaryColor;
@@ -13,6 +12,5 @@ button:focus{
   }
   &--warning{
     background: $warningColor;
-    color:$warningFont;
   }
 }
