@@ -1,2 +1,1 @@
-# react-confirm-demo
-react-confirm-demo
+# React-Confirm-Demo
