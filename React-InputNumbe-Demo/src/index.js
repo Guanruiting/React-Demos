@@ -4,7 +4,7 @@ import './index.css';
 import InputNumber from './inputNumber'
 
 function App(){
-    const [value] = useState('defaultValue');
+    const [value] = useState('0');
     return (
         <div>
             <InputNumber value={value} bindChange={e=>{

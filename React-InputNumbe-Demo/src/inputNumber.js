@@ -8,9 +8,9 @@ class InputNumber extends React.Component{
         }
     }
     static propTypes = {
-        value: PropTypes.string,
+        value: PropTypes.number,
         bindChange: PropTypes.func,
-        defaultValue: PropTypes.string,
+        defaultValue: PropTypes.number,
     }
     render(){
         const {
@@ -22,12 +22,12 @@ class InputNumber extends React.Component{
 
         return(
             <React.Fragment>
-            { !defaultValue && <input type="string" placeholder="受控组件" value={this.state.stringValue}  {...rest}
+            { !defaultValue && <input type="number" placeholder="受控组件" value={this.state.stringValue}  {...rest}
                 onChange={(e)=>{
                     this.setState({ stringValue: e.target.value })
                     bindChange(e);
                 }} /> }
-            { defaultValue && <input type="string" placeholder="非受控组件" value={defaultValue} {...rest}
+            { defaultValue && <input type="number" placeholder="非受控组件" value={defaultValue} {...rest}
                 onChange={(e)=>{
                     bindChange(e);
                 }} /> }
