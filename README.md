@@ -1,2 +1,2 @@
-# React Confirm Component
- A React confirm component demo
+# React
+ A React confirm component
